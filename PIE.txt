@@ -1,0 +1,76 @@
+CREATE DATABASE cnva;
+
+CREATE TABLE elev (
+	nr_matricol INT(7) NOT NULL,
+	nume VARCHAR(255) NOT NULL,
+	initiala_tata VARCHAR(1) NOT NULL,
+	pren VARCHAR(255) NOT NULL,
+	cnp BIGINT(13) NOT NULL,
+	cetatenie VARCHAR(255) NOT NULL,
+	loc_nastere VARCHAR(255) NOT NULL,
+	adresa VARCHAR(255) NOT NULL,
+	serie_ci VARCHAR(2) NOT NULL,
+	nr_ci MEDIUMINT(6) NOT NULL,
+	sex VARCHAR(1) NOT NULL,
+	loc BIT NOT NULL,
+	profil VARCHAR(255) NOT NULL,
+	specializare VARCHAR(255) NOT NULL,
+	bilingv_engleza VARCHAR(2) NOT NULL,
+	medie_admitere FLOAT(2, 2) NOT NULL,
+	mentiuni VARCHAR(255),
+	PRIMARY KEY (nr_matricol)
+);
+
+CREATE TABLE profesor (
+	cod_matricol INT(4) NOT NULL,
+	nume VARCHAR(255) NOT NULL,
+	initiala_tata VARCHAR(1) NOT NULL,
+	pren VARCHAR(255) NOT NULL,
+	cnp BIGINT(13) NOT NULL,
+	cetatenie VARCHAR(255) NOT NULL,
+	loc_nastere VARCHAR(255) NOT NULL,
+	adresa VARCHAR(255) NOT NULL,
+	serie_ci VARCHAR(2) NOT NULL,
+	nr_ci MEDIUMINT(6) NOT NULL,
+	sex VARCHAR(1) NOT NULL,
+	materii predate VARCHAR(255) NOT NULL,
+	director VARCHAR(2) NOT NULL,
+	director_adj VARCHAR(2) NOT NULL,
+	diriginte VARCHAR(2) NOT NULL,
+	suplinitor VARCHAR(2) NOT NULL,
+	mentiuni VARCHAR(255),
+	PRIMARY KEY (cod_matricol)
+);
+
+CREATE TABLE tabel_login (
+	username VARCHAR(255) NOT NULL,
+	password VARCHAR(255) NOT NULL,
+	PRIMARY KEY (username)
+);
+
+INSERT INTO elev
+	VALUES (0123456, 'Scripcariu', 'R', 'Bogdan', 01234567890123, 'romana', 'Galati', 'Strada Vultur, Nr. 10, Ap. 5', 'AB', 012345, 'M', 10, 'real', 'Stiinte ale Naturii', 'Da', 9.82);
+
+INSERT INTO elev
+	VALUES (0234567, 'Cuconu', 'P', 'Denisa', 01234567890000, 'romana', 'Galati', 'Strada Brailei, Nr. 27, Ap. 10', 'BC', 023456, 'F', 15, 'real', 'Matematica-Informatica', 'Nu', 9.75);
+
+INSERT INTO elev
+	VALUES (0123789, 'Petrache', 'G', 'Andrei', 01234567890189, 'romana', 'Braila', 'Strada Galati, Nr. 10, Ap. 5', 'CD', 034567, 'M', 7, 'uman', 'Stiinte Sociale', 'Nu', 9.64);
+
+INSERT INTO profesor
+	VALUES (12345, 'Craciun', 'R', 'Marian', 01234567890007, 'romana', 'Galati', 'Strada Siderurgistilor, Nr. 13, Ap. 31', 'ZL', 055555, 'M', 'matematica', 'Da', 'Nu', 'Da', 'Nu');
+
+INSERT INTO profesor
+	VALUES (12375, 'Popa', 'F', 'Rustem', 01234567890010, 'romana', 'Galati', 'Strada Siderurgistilor, Nr. 10, Ap. 20', 'ZF', 056789, 'M', 'fizica', 'Nu', 'Da', 'Nu', 'Nu');
+
+INSERT INTO profesor
+	VALUES (12345, 'Vlase', 'A', 'Mihai', 01234567892245, 'romana', 'Galati', 'Strada Navelor, Nr. 30, Ap. 10', 'GZ', 056781, 'M', 'informatica', 'Nu', 'Nu', 'Nu', 'Nu');
+
+INSERT INTO tabel_login
+	VALUES (marian_craciun, mate-important);
+
+INSERT INTO tabel_login
+	VALUES (rustem_popa, fiz-important);
+
+INSERT INTO tabel_login
+	VALUES (mihai_vlase, info-important);
