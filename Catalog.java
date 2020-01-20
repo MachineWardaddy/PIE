@@ -186,8 +186,97 @@ public class Catalog extends JFrame {
 		comboBoxNumePren.setBackground(Color.WHITE);
 		comboBoxNumePren.setBounds(153, 30, 500, 27);
 		comboBoxNumePren.setFont(new Font("Comic Sans MS", Font.PLAIN, 14));
-		comboBoxNumePren.setModel(new DefaultComboBoxModel(new String[] {"Scripcariu Bogdan"}));
+		DefaultComboBoxModel model10 = new DefaultComboBoxModel(new String[] {"Angheluță Andreea-Simona", "Chicoș Valentin"});
+		DefaultComboBoxModel model11 = new DefaultComboBoxModel(new String[] {"Frunză Andrei Marian", "Mihai Georgiana"});
+		DefaultComboBoxModel model12 = new DefaultComboBoxModel(new String[] {"Aștefănoaie Florin", "Oancă Marina"});
+		DefaultComboBoxModel model13 = new DefaultComboBoxModel(new String[] {"Ciot Dragoș Georgian", "Gheorghiță Nicoleta Andreea"});
+		DefaultComboBoxModel model14 = new DefaultComboBoxModel(new String[] {"Bardaș Andrei", "Moise Ștefania Marinela"});
+		DefaultComboBoxModel model15 = new DefaultComboBoxModel(new String[] {"Crăciun Liviu Valentin", "Isaiea Giulia Mihaela"});
+		DefaultComboBoxModel model16 = new DefaultComboBoxModel(new String[] {"Pană Laurenția", "Șerban Cristian"});
+		DefaultComboBoxModel model17 = new DefaultComboBoxModel(new String[] {"Blîndu Bogdan Ionuț", "Deceanu Daniel"});
+		DefaultComboBoxModel model18 = new DefaultComboBoxModel(new String[] {"Moroșan Alexandru", "Pătrașcu Elena Mădălina"});
+		DefaultComboBoxModel model19 = new DefaultComboBoxModel(new String[] {"Carp Robert Valentin", "Tăinescu Sergiu Nicușor"});
+		DefaultComboBoxModel model20 = new DefaultComboBoxModel(new String[] {"Licheardopol Cătălin Cristian", "Năstase Cristina"});
+		DefaultComboBoxModel model21 = new DefaultComboBoxModel(new String[] {"Rotariu Eduard Gabriel", "Țarălungă Emil"});
+		DefaultComboBoxModel model22 = new DefaultComboBoxModel(new String[] {"Dumitrașcu Evelin", "Manole Valentin"});
+		DefaultComboBoxModel model23 = new DefaultComboBoxModel(new String[] {"Necula Gabriel-Florin", "Sacajiu Ana"});
+		DefaultComboBoxModel model24 = new DefaultComboBoxModel(new String[] {"Cîțu Gheorghiță", "Teșulă Adrian Zamfirel"});
+		DefaultComboBoxModel model25 = new DefaultComboBoxModel(new String[] {"Antohe Lăcrămioara-Constantina", "Chirilă Mihalea Gabriela"});
+		DefaultComboBoxModel model26 = new DefaultComboBoxModel(new String[] {"Fanaca Bogdan Andrei", "Jec Valentin"});
+		DefaultComboBoxModel model27 = new DefaultComboBoxModel(new String[] {"Botez Teodora", "Moisei Lilian"});
+		DefaultComboBoxModel model28 = new DefaultComboBoxModel(new String[] {"Ciuraru Bogdan Andrei", "Gheorghe Florin-Ionuț", "Scripcariu Bogdan"});
+		DefaultComboBoxModel model29 = new DefaultComboBoxModel(new String[] {"Perju Andrei Cristian", "Stoian Lucian Ionuț"});
+		DefaultComboBoxModel model30 = new DefaultComboBoxModel(new String[] {"Buruiană Alexandru", "Lefterache Andreea"});
+		DefaultComboBoxModel model31 = new DefaultComboBoxModel(new String[] {"Munteanu Andreea", "Popa Alina-Adriana"});
+		DefaultComboBoxModel model32 = new DefaultComboBoxModel(new String[] {"Cuconu Denisa-Mădălina", "Stratulat Georgiana"});
+		DefaultComboBoxModel model33 = new DefaultComboBoxModel(new String[] {"Ghinea Andreea", "Macuc Marian Dicomes"});
+		DefaultComboBoxModel model34 = new DefaultComboBoxModel(new String[] {"Nini Marian", "Rusu Alexandru"});
+		DefaultComboBoxModel model35 = new DefaultComboBoxModel(new String[] {"Călin Doina-Veronica", "Dobri Cristina"});
+		DefaultComboBoxModel model36 = new DefaultComboBoxModel(new String[] {"Manole Maria", "Toma Albert Cristian"});
+		DefaultComboBoxModel model37 = new DefaultComboBoxModel(new String[] {"Chiosa Iuliana-Simona", "Dorobanțu Vlad Alexandru"});
 		panel2.add(comboBoxNumePren);
+		
+		comboBoxClasa.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (comboBoxClasa.getSelectedItem() == "9A") {
+					comboBoxNumePren.setModel(model10);
+				} else if (comboBoxClasa.getSelectedItem() == "10A") {
+					comboBoxNumePren.setModel(model11);
+				} else if (comboBoxClasa.getSelectedItem() == "11A") {
+					comboBoxNumePren.setModel(model12);
+				} else if (comboBoxClasa.getSelectedItem() == "12A") {
+					comboBoxNumePren.setModel(model13);
+				} else if (comboBoxClasa.getSelectedItem() == "9B") {
+					comboBoxNumePren.setModel(model14);
+				} else if (comboBoxClasa.getSelectedItem() == "9D") {
+					comboBoxNumePren.setModel(model15);
+				} else if (comboBoxClasa.getSelectedItem() == "9E") {
+					comboBoxNumePren.setModel(model16);
+				} else if (comboBoxClasa.getSelectedItem() == "10B") {
+					comboBoxNumePren.setModel(model17);
+				} else if (comboBoxClasa.getSelectedItem() == "10D") {
+					comboBoxNumePren.setModel(model18);
+				} else if (comboBoxClasa.getSelectedItem() == "10E") {
+					comboBoxNumePren.setModel(model19);
+				} else if (comboBoxClasa.getSelectedItem() == "11B") {
+					comboBoxNumePren.setModel(model20);
+				} else if (comboBoxClasa.getSelectedItem() == "11D") {
+					comboBoxNumePren.setModel(model21);
+				} else if (comboBoxClasa.getSelectedItem() == "11E") {
+					comboBoxNumePren.setModel(model22);
+				} else if (comboBoxClasa.getSelectedItem() == "12B") {
+					comboBoxNumePren.setModel(model23);
+				} else if (comboBoxClasa.getSelectedItem() == "12D") {
+					comboBoxNumePren.setModel(model24);
+				} else if (comboBoxClasa.getSelectedItem() == "12E") {
+					comboBoxNumePren.setModel(model25);
+				} else if (comboBoxClasa.getSelectedItem() == "9C") {
+					comboBoxNumePren.setModel(model26);
+				} else if (comboBoxClasa.getSelectedItem() == "10C") {
+					comboBoxNumePren.setModel(model27);
+				} else if (comboBoxClasa.getSelectedItem() == "11C") {
+					comboBoxNumePren.setModel(model28);
+				} else if (comboBoxClasa.getSelectedItem() == "12C") {
+					comboBoxNumePren.setModel(model29);
+				} else if (comboBoxClasa.getSelectedItem() == "9F") {
+					comboBoxNumePren.setModel(model30);
+				} else if (comboBoxClasa.getSelectedItem() == "10F") {
+					comboBoxNumePren.setModel(model31);
+				} else if (comboBoxClasa.getSelectedItem() == "11F") {
+					comboBoxNumePren.setModel(model32);
+				} else if (comboBoxClasa.getSelectedItem() == "12F") {
+					comboBoxNumePren.setModel(model33);
+				} else if (comboBoxClasa.getSelectedItem() == "9G") {
+					comboBoxNumePren.setModel(model34);
+				} else if (comboBoxClasa.getSelectedItem() == "10G") {
+					comboBoxNumePren.setModel(model35);
+				} else if (comboBoxClasa.getSelectedItem() == "11G") {
+					comboBoxNumePren.setModel(model36);
+				} else if (comboBoxClasa.getSelectedItem() == "12G") {
+					comboBoxNumePren.setModel(model37);
+				}
+			}
+		});
 		
 		JLabel labelInitiala = new JLabel("Inițiala tatălui:");
 		labelInitiala.setBackground(Color.WHITE);
